@@ -11,7 +11,7 @@ dependencies = []
 
 [project.scripts]
 a1 = "a1:main"
-a2= "a1:decor.msg"
+a2= "a1:decor.get_name"
 
 [build-system]
 requires = ["hatchling"]
