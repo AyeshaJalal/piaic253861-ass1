@@ -11,7 +11,7 @@ Steps
 
         decor1: Adds emojis around a message.
 
-        decor2: Adds a border of * above and below a message.
+        decor2: Adds a border of ✨ above and below a message.
 
 2.  Function Definition with Decorators
 
@@ -21,7 +21,7 @@ Steps
 
         Gets its return value (e.g., "Ayesha")
 
-        Adds emojis: 🎉 Ayesha 🎉
+        Adds emojis: 🎉🎀🎉🎀 Ayesha 🎀🎉🎀🎉
 
         Then, decor2(...) is called on the result of decor1(...).
 
@@ -55,34 +55,11 @@ Suppose user types: Ayesha
 Step 2: decor1 Modifies Output
 Original get_name() returns "Ayesha"
 
-decor1 wraps it: "🎉 Ayesha 🎉"
+decor1 wraps it: "🎉🎀🎉🎀 Ayesha 🎀🎉🎀🎉"
 
 Step 3: decor2 Modifies Output
-decor2 receives "🎉 Ayesha 🎉" from decor1
+decor2 receives "🎉🎀🎉🎀 Ayesha 🎀🎉🎀🎉" from decor1
 
-It calculates length: len("🎉 Ayesha 🎉") = 11
+It calculates length: len(" 🎉🎀🎉🎀 Ayesha 🎀🎉🎀🎉 ") = 16
 
-Builds border: "****\*\*\*****"
-
-Flow Chart
-User Input: "Ayesha"
-|
-v
-Original get_name() returns: "Ayesha"
-|
-v
-decor1 → "🎉 Ayesha 🎉"
-|
-v
-decor2 →
-
----
-
-🎉 Ayesha 🎉
-
----
-
-     |
-     v
-
-Printed to screen
+Builds border: "✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨"
